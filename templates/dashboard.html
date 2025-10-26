@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - AI Poultry Biosecurity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar h1 {
+            display: inline-block;
+            margin-right: 2rem;
+        }
+        
+        .nav-links {
+            display: inline-block;
+            float: right;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background: rgba(255,255,255,0.2);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .welcome-section {
+            background: white;
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .welcome-section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+        }
+        
+        .welcome-section p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .stat-card h3 {
+            font-size: 2.5rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-card p {
+            color: #666;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .welcome-section h2 {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>🐔 AI Poultry Biosecurity</h1>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/dashboard">Dashboard</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Welcome to Your Dashboard</h2>
+            <p>Monitor and manage your poultry farm's biosecurity measures with AI-powered insights.</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="icon">🏥</div>
+                <h3>5</h3>
+                <p>Active Farms</p>
+            </div>
+            <div class="stat-card">
+                <div class="icon">📊</div>
+                <h3>98%</h3>
+                <p>Biosecurity Score</p>
+            </div>
+            <div class="stat-card">
+                <div class="icon">🤖</div>
+                <h3>24/7</h3>
+                <p>AI Monitoring</p>
+            </div>
+            <div class="stat-card">
+                <div class="icon">✅</div>
+                <h3>42</h3>
+                <p>Checks Today</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Quick Actions</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>📈 Monitoring</h3>
+                <p>Real-time monitoring of temperature, humidity, and air quality across all farms.</p>
+                <br>
+                <a href="#" class="btn-primary">View Monitoring</a>
+            </div>
+            <div class="feature-card">
+                <h3>🚨 Alerts</h3>
+                <p>Get instant notifications about potential biosecurity threats and issues.</p>
+                <br>
+                <a href="#" class="btn-primary">Check Alerts</a>
+            </div>
+            <div class="feature-card">
+                <h3>📋 Reports</h3>
+                <p>Generate comprehensive reports and analytics for your poultry farm operations.</p>
+                <br>
+                <a href="#" class="btn-primary">View Reports</a>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🤖 AI-Powered Detection</h3>
+                <p>Advanced machine learning algorithms detect anomalies and potential health issues before they become problems.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📱 Mobile Access</h3>
+                <p>Access your dashboard from anywhere with our responsive design and mobile app.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🛡️ Biosecurity Compliance</h3>
+                <p>Ensure your farm meets all biosecurity standards with automated compliance tracking.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
